@@ -1,40 +1,52 @@
-## Getting Started
+## Assignment 4
+* `Diana Imambekova`
+* `David Novikov` 
+* `Madina Salen` 
+* `Temirlan Kabdikarim` 
 
-Create a project using this example:
+### Description:
+This README provides a step-by-step guide to creating a basic staking smart contract in Solidity and building a dApp to interact with it. The staking contract allows users to stake tokens, earn rewards, and withdraw their staked tokens.
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
+## Task Steps
+### Step 1: Set Up Your Development Environment
+Use Hardhat to set up your development environment.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Step 2: Define the Smart Contract
+Define the staking smart contract with basic properties and functions for staking, calculating rewards, distributing rewards, and withdrawal.
 
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+### Step 3: Implement Staking Functionality
+Implement the staking logic in the `stake` function, allowing users to stake tokens and recording staking start times.
 
-## Environment Variables
+### Step 4: Calculate Rewards
+Create a `calculateRewards` function to compute rewards based on staked amounts and the staking period.
 
-To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+### Step 5: Distribute Rewards
+Implement the `distributeRewards` function to distribute rewards to stakers at the end of each staking period.
 
-## Deploy to IPFS
+### Step 6: Withdrawal Function
+Create a `withdraw` function that allows users to withdraw their staked tokens and earned rewards.
 
-Deploy a copy of your application to IPFS using the following command:
+### Step 7: Testing and Deployment
+Test your contract using Hardhat and deploy it to a testnet for interaction with a dApp.
 
-```bash
-yarn deploy
-```
+### Step 8: Building a Frontend
+Consider building a user-friendly frontend using web development technologies (HTML, JavaScript, React, etc.) for users to interact with the staking smart contract.
 
-## Learn More
+## Actions Taken
+Here's a summary of the steps and actions taken in creating the staking smart contract and dApp:
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+1. Created a new app using the NPM library and ThirdWeb source.
+2. Installed Chakra-UI for building the frontend part of the dApp.
+3. Connected a wallet to the ThirdWeb service.
+4. Set up a regular token contract.
+5. Deployed the StakeToken contract with specified parameters.
+6. Minted tokens for StakeToken.
+7. Deployed a token contract for rewards and minted RewardTokens.
+8. Deployed the Stake contract using ERC20 token contracts.
+9. Deposited some RewardTokens to the ERC20Stake token for approval.
+10. Created a dApp structure using NPX and ThirdWeb.
+11. Specified the Goerli testnet and Chakra-UI as the framework.
+12. Specified the constant addresses of tokens and contracts.
+13. Edited and customized the dApp pages.
+14. Built a navbar component using Chakra-UI for wallet connection functionality.
 
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Templates](https://thirdweb.com/templates)
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
